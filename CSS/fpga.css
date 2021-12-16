@@ -1,0 +1,131 @@
+  .fpga-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    height: 9vw;
+    color: whitesmoke;
+    background: rgba(0,0,0,0.2);
+    margin-top: 1%;
+  }
+
+  .fpga-title-section p {
+    margin-left: 5%;
+    border-right: .15em solid rgb(255, 61, 47);
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 4px 4px 4px rgb(255, 61, 47);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .fpga-title-section p:nth-child(1) {
+    width: 13.5em;
+    -webkit-animation: type 3s steps(40, end);
+    animation: type 3s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  #fpga-content-section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 5;
+    transition-delay: 1s;
+  }
+  
+  #fpgaTitle {
+    font-size: 4vw;
+  }
+  
+  #fpgaDescription {
+    font-size: 1.75vw;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .25vw;
+    text-align: center;
+    margin: 5%;
+  }
+  
+  #final-report-pdf {
+    margin-bottom: 5%;
+    width: 65%;
+    height: 80vw;
+  }
+
+  #fpga-content-section.active {
+    z-index: -1;
+    transition-delay: 1ms;
+  }
+
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 61, 47);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 61, 47);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      visibility: visible;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 61, 47);
+    }
+    100% {
+      visibility: visible;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      visibility: visible;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 61, 47);
+    }
+    100% {
+      visibility: visible;
+      border: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
