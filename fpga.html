@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basys 3 FPGA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/CSS/layout.css">
+  <link rel="stylesheet" href="/CSS/fpga.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="social-nav">
+    <a href="https://www.facebook.com/brendan.blacklock.3"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://twitter.com/bblacklock_"><i class="fab fa-twitter-square"></i></a>
+    <a href="https://www.linkedin.com/in/brendan-blacklock25252525/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/bblacklock25"><i class="fab fa-github-square"></i></a>
+  </div>
+  <div id="curtain">
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "about.html">About</a></li>
+        <li><a href = "portfolio.html">Portfolio</a></li>
+        <li><a href = "resume.html">Resume</a></li>
+        <li><a href = "contact.html">Contact</a></li>
+      </ul>
+    <div class="toggle" onclick="toggle(); toggleIcon(); toggleBasys3();"><img id="menu-icon" src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png"></div>
+  </div>
+  <div class = "fpga-title-section">
+    <p id = "fpgaTitle">> Basys 3 FPGA Project</p>
+  </div>
+  <div id = "fpga-content-section">
+    <p id = "fpgaDescription">My lab group, consisting of three members, was tasked with creating a Rover 5 robot that was capable of 3 key functions. The Rover 5 was to avoid walls, detect the colors red, green, and blue, and recieve morse code commands. The project design proved to be fully functional. While I spent most of my time designing and coding the Verilog state-machines for wall avoidance and morse code communication, I also engineered various circuits for overcurrent protection and the morse code transmitter/reciever. The report below outlines the entire design process.</p>
+    <iframe id="final-report-pdf" src="/Media/BrendanBlacklock_FinalReport.pdf"></iframe>
+  </div>
+  <div id = "footer-fpga">
+    <p>Copyright @ 2021 Brendan Blacklock. All Rights Reserved</p>
+    <p>"To those who quietly help advance the causes we mutually believe in, knowing advancing the cause is the only reward: thank you" - Elon Musk</p>
+  </div>
+  <script src = "/JS/navbar.js" type = "text/javascript"></script>
+</body>
+</html>
